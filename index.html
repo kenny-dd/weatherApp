@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@100;200;400&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:wght@300;400&family=Poppins&family=Raleway:wght@300;400&family=Roboto+Slab:wght@300;400&family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input type="text" class="search-bar" placeholder="Search Location" />
+        <button class="search-btn">
+          <svg
+            width="1.5em"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div class="weather loading">
+
+        <h2 class="city">Weather in Denver</h2>
+        <h1 class="temp">51°F</h1>
+
+        <div class="hi-low">
+            <h1 class="temp-max">55°F</h1>
+            <h1 class="temp-min">41°F</h1>
+        </div> 
+
+        <div class="flex">
+          <img
+            src="https://openweathermap.org/img/wn/04d.png"
+            alt=""
+            class="icon"
+          />
+            <div class="description">Cloudy</div>
+        </div>
+
+            <div class="humidity">Humidity: 60%</div>
+            <div class="wind">Wind Speed: 6.2 km/h</div>
+
+      </div>
+    </div>
+  </body>
+</html>
